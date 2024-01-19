@@ -10,7 +10,7 @@ export default function StateFunc(){
     }
     const onClickZoomIn = () => {
         let newSize = size + 1
-        setSize(+1)
+        setSize(newSize)
     }
     let msgboxSyle = {
         display: 'inline-block',
@@ -24,7 +24,7 @@ export default function StateFunc(){
         <div style={{ textAlign: 'center', marginTop: 20 }}>
             <div style={msgboxSyle}>{text}</div><br /><br />
             <button onClick={onClickSetText}> ข้อความ</button> &nbsp;
-            <button onClick={() => setSize(size + 1)}>เพิ่มขนาดตัวหนังสือ</button> &nbsp;
+            <button onClick={onClickZoomIn}>เพิ่มขนาดตัวหนังสือ</button> &nbsp;
             <button onClick={() => setSize(size - 1)}>ลดขนาดตัวหนังสือ</button>
         </div >
     )
