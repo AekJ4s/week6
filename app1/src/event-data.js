@@ -46,6 +46,7 @@ export function EventData2(){
         alert(`${t} = ${r}`)
     }
         return (
+
             <div style={{textAlign:'center',marginTop:20}}>
                 <button onClick={(ev) => onClickStartStop(ev)}>Start</button>
                 <br/><br/>
@@ -54,6 +55,11 @@ export function EventData2(){
                 <button onClick={(ev) => onClickAdd(ev)}>30 * 40</button>
                 <br/><br/>
             </div>
+             
+             
+
+
+             
         )
 }
 
